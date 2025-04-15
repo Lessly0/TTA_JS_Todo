@@ -3,8 +3,7 @@ let tasks=[
     ["Personal",["Grocery shopping", "Gym"]]
 ]
 
-//console.log(tasks[0][0]);
-//console.log(tasks[1]);
+//function to display tasks in all categories
 
 function displayTasks(){
     tasks.forEach((category)=>{
@@ -14,6 +13,8 @@ function displayTasks(){
         })
     })
 }
+
+//function to add a task to a category
 
 function addtask(category,task){
     for (let i=0;i<tasks.length;i++){
@@ -29,6 +30,7 @@ function addtask(category,task){
 }
 
 //function to remove a task from a category
+
 function removetask(category,index){
     for (let i=0;i<tasks.length;i++){
         if (tasks[i][0]===category){
